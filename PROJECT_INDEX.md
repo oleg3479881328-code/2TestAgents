@@ -4,6 +4,20 @@
 
 `oleg3479881328-code/2TestAgents`
 
+Repository URL:
+
+`https://github.com/oleg3479881328-code/2TestAgents`
+
+## AI Entrypoint
+
+Primary AI entrypoint:
+
+`START_HERE_FOR_AI.md`
+
+Any AI assistant, coding agent, research agent, or automation agent pointed to this repository must start there.
+
+The repository must be usable through one-link handoff: the user gives only the repository URL, and the AI agent discovers the workflow rules from the repository itself.
+
 ## Project Name
 
 Project Execution OS
@@ -35,19 +49,30 @@ Project Execution OS
 
 Current implementation mode: document-first.
 
-Most layers are documents, contracts, rules, and manually executed workflow artifacts.
+Most layers are documents, contracts, rules, templates, and manually executed workflow artifacts.
 
 ## Current Phase
 
-Foundation phase.
+Foundation phase with first manual workflow run completed.
 
-The project is currently defining the minimal universal workflow contract before any runtime, automation, backend, frontend, database, or orchestration system is allowed.
+The project has a minimal document-first foundation and a reusable universal workflow template.
+
+The foundation is still not fully active governance. Current foundation review result:
+
+`reviewed_with_required_improvements`
 
 ## Current Source of Truth Documents
 
+- `START_HERE_FOR_AI.md`
 - `README.md`
 - `PROJECT_INDEX.md`
 - `docs/WORKFLOW_CONTRACT.md`
+- `docs/GOVERNANCE.md`
+- `docs/REVIEW_PROCESS.md`
+- `docs/LIFECYCLE.md`
+- `knowledge-library/README.md`
+- `logs/WORKFLOW_LOG.md`
+- `workflow-templates/universal-workflow-v1/README.md`
 
 ## Canonical Workflow Contract
 
@@ -69,6 +94,39 @@ Minimal workflow chain:
 08_LOG.md
 ```
 
+## Reusable Workflow Template
+
+Current reusable template:
+
+`workflow-templates/universal-workflow-v1/`
+
+Template files:
+
+- `README.md`
+- `00_INPUT.md`
+- `01_CLARIFICATION.md`
+- `02_RESEARCH.md`
+- `03_PLAN.md`
+- `04_EXECUTION_SPEC.md`
+- `05_REVIEW.md`
+- `06_RESULT.md`
+- `07_KNOWLEDGE_EXTRACT.md`
+- `08_LOG.md`
+
+## Completed Workflow Runs
+
+### `workflow-runs/0001-foundation-review/`
+
+Purpose:
+Review Project Execution OS foundation through its own workflow.
+
+Result:
+
+`reviewed_with_required_improvements`
+
+Key conclusion:
+The foundation is coherent enough to continue, but not ready for full active status until required improvements are completed.
+
 ## Confirmed Principles
 
 1. Document-first before runtime.
@@ -81,6 +139,7 @@ Minimal workflow chain:
 8. Atomic workflows first.
 9. Execution quality before architectural fantasy.
 10. Minimal universal workflow before specialized agents.
+11. One-link AI handoff through `START_HERE_FOR_AI.md`.
 
 ## Current Forbidden Priorities
 
@@ -98,34 +157,12 @@ Do not build or prioritize yet:
 - mass skill creation;
 - Codex execution layer.
 
-## Current Missing Foundation Documents
+## Current Missing / Required Improvements
 
-Required next foundation documents:
-
-- `docs/GOVERNANCE.md`
-- `docs/REVIEW_PROCESS.md`
-- `docs/LIFECYCLE.md`
-- `logs/WORKFLOW_LOG.md`
-- `knowledge-library/README.md`
-
-## First Required Workflow Run
-
-A full manual workflow run must be completed before any automation or runtime work.
-
-Target structure:
-
-```text
-workflow-runs/0001-example-run/
-  00_INPUT.md
-  01_CLARIFICATION.md
-  02_RESEARCH.md
-  03_PLAN.md
-  04_EXECUTION_SPEC.md
-  05_REVIEW.md
-  06_RESULT.md
-  07_KNOWLEDGE_EXTRACT.md
-  08_LOG.md
-```
+- Update `logs/WORKFLOW_LOG.md` after creating the reusable workflow template and AI entrypoint.
+- Extract structured knowledge-library entries from `workflow-runs/0001-foundation-review/07_KNOWLEDGE_EXTRACT.md`.
+- Create compact workflow mode later for small tasks.
+- Perform activation review before marking foundation documents as active.
 
 ## Current Status
 
@@ -133,13 +170,23 @@ Initialized as a document-first Project Execution OS foundation.
 
 Current completed artifacts:
 
+- `START_HERE_FOR_AI.md`
 - `README.md`
-- `docs/WORKFLOW_CONTRACT.md`
 - `PROJECT_INDEX.md`
+- `docs/WORKFLOW_CONTRACT.md`
+- `docs/GOVERNANCE.md`
+- `docs/REVIEW_PROCESS.md`
+- `docs/LIFECYCLE.md`
+- `logs/WORKFLOW_LOG.md`
+- `knowledge-library/README.md`
+- `workflow-runs/0001-foundation-review/`
+- `workflow-templates/universal-workflow-v1/`
 
 ## Next Required Action
 
-Create `docs/GOVERNANCE.md`.
+Update `logs/WORKFLOW_LOG.md` to record:
 
-Purpose:
-Define project governance rules, source-of-truth rules, state separation, artifact requirements, and anti-overbuilding constraints.
+- `START_HERE_FOR_AI.md` creation;
+- `README.md` AI entrypoint update;
+- `PROJECT_INDEX.md` state sync;
+- `workflow-templates/universal-workflow-v1/` creation.
